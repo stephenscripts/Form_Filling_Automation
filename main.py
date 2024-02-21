@@ -1,26 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-person = {
-    "Last name": "Adukwulu",
-    "First name": "Nonso",
-    "Date of birth": "23/09/87",
-    "Passport number": "B01502427",
-    "Sex": "male",
-    "Street": "11 Igwe street, Rumuodumanya, Obio/Akpo, Rivers State, Nigeria",
-    "Zip code": "500102",
-    "Country": "Nigeria",
-    "Telephone": "08035502017",
-    "E-mail": "nonsoadukwulunonso@gmail.com",
-    "Name at birth": "Nonso",
-    "Nationality at birth": "Nigerian",
-    "Country of birth": "Nigeria",
-    "Place of birth": "Enugu State Nigeria",
-    "Actual nationality": "Nigerian",
-    "Date of issue of passport": "12/13/2022",
-    "Passport valid until":"12/12/2027",
-    "Passport issued by (authority)": "Ilorin",
-}
 
 web = webdriver.Chrome()
 web.get('https://appointment.bmeia.gv.at/')
@@ -51,6 +31,62 @@ time.sleep(3)
 next_Button = web.find_element(By.XPATH, '//*[@id="main"]/form/input[7]')
 next_Button.click()
 
+Lastname = "Adukwulu"
+Firstname = "Nonso"
+DOB ="23/09/87"
+Passport_number = "B01502427"
+Sex = "male"
+Street = "11 Igwe street, Rumuodumanya, Obio/Akpo, Rivers State, Nigeria"
+Zip_code1 = "500"
+Zip_code2 = "102"
+Country = "Nigeria"
+Telephone = "08035502017"
+Email = "nonsoadukwulunonso@gmail.com"
+Name_at_birth ="Nonso"
+Nationality_at_birth = "Nigerian"
+Country_of_birth = "Nigeria"
+Place_of_birth = "Enugu State Nigeria"
+Actual_nationality = "Nigerian"
+Date_of_issue_of_passport = "12/13/2022"
+Passport_valid_until = "12/12/2027"
+Passport_issued_at = "Ilorin"
 
+
+lastname = web.find_element(By.XPATH, '//*[@id="Lastname"]')
+lastname.send_keys(Lastname)
+firstname = web.find_element(By.XPATH, '//*[@id="Firstname"]')
+firstname.send_keys(Firstname)
+dOB = web.find_element(By.XPATH, '//*[@id="DateOfBirth"]')
+dOB.send_keys(DOB)
+sex = web.find_element(By.XPATH, '//*[@id="TraveldocumentNumber"]')
+sex.send_keys(Passport_number)
+street = web.find_element(By.XPATH, '//*[@id="TraveldocumentNumber"]')
+street.send_keys(Passport_number)
+zipCode1 = web.find_element(By.XPATH, '//*[@id="TraveldocumentNumber"]')
+zipCode1.send_keys(Passport_number)
+zipCode2 = web.find_element(By.XPATH, '//*[@id="TraveldocumentNumber"]')
+zipCode2.send_keys(Passport_number)
+country = web.find_element(By.XPATH, '//*[@id="TraveldocumentNumber"]')
+country.send_keys(Passport_number)
+telephone = web.find_element(By.XPATH, '//*[@id="TraveldocumentNumber"]')
+telephone.send_keys(Passport_number)
+email = web.find_element(By.XPATH, '//*[@id="TraveldocumentNumber"]')
+email.send_keys(Passport_number)
+nameAtBirth = web.find_element(By.XPATH, '//*[@id="TraveldocumentNumber"]')
+nameAtBirth.send_keys(Passport_number)
+nationalityAtBirth = web.find_element(By.XPATH, '//*[@id="TraveldocumentNumber"]')
+nationalityAtBirth.send_keys(Passport_number)
+countryOfBirth = web.find_element(By.XPATH, '//*[@id="TraveldocumentNumber"]')
+countryOfBirth.send_keys(Passport_number)
+place_of_birth = web.find_element(By.XPATH, '//*[@id="TraveldocumentNumber"]')
+place_of_birth.send_keys(Passport_number)
+actual_nationality = web.find_element(By.XPATH, '//*[@id="TraveldocumentNumber"]')
+actual_nationality.send_keys(Passport_number)
+date_of_issue_of_passport = web.find_element(By.XPATH, '//*[@id="TraveldocumentNumber"]')
+date_of_issue_of_passport.send_keys(Passport_number)
+passport_valid_until = web.find_element(By.XPATH, '//*[@id="TraveldocumentNumber"]')
+passport_valid_until.send_keys(Passport_number)
+passport_issued_at = web.find_element(By.XPATH, '//*[@id="TraveldocumentNumber"]')
+passport_issued_at.send_keys(Passport_number)
 
 time.sleep(2)
