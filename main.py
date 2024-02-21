@@ -8,19 +8,18 @@ person = {
     "Passport number": "B01502427",
     "Sex": "male",
     "Street": "11 Igwe street, Rumuodumanya, Obio/Akpo, Rivers State, Nigeria",
-    "Zip code": 500102
-Country: Nigeria
-Telephone: 08035502017
-E-mail: nonsoadukwulunonso@gmail.com
-Name at birth: Nonso
-Nationality at birth: Nigerian
-Country of birth: Nigeria
-Place of birth: Enugu State Nigeria
-Actual nationality: Nigerian
-Date of issue of passport:13 Dec/Dec 22
-Passport valid until:12 Dec/Dec 27
-Passport issued by (authority): Ilorin
-
+    "Zip code": "500102",
+    "Country": "Nigeria",
+    "Telephone": "08035502017",
+    "E-mail": "nonsoadukwulunonso@gmail.com",
+    "Name at birth": "Nonso",
+    "Nationality at birth": "Nigerian",
+    "Country of birth": "Nigeria",
+    "Place of birth": "Enugu State Nigeria",
+    "Actual nationality": "Nigerian",
+    "Date of issue of passport": "12/13/2022",
+    "Passport valid until":"12/12/2027",
+    "Passport issued by (authority)": "Ilorin",
 }
 
 web = webdriver.Chrome()
@@ -50,5 +49,8 @@ next_Button.click()
 time.sleep(3)
 
 next_Button = web.find_element(By.XPATH, '//*[@id="main"]/form/input[7]')
+next_Button.click()
+
+
 
 time.sleep(2)
